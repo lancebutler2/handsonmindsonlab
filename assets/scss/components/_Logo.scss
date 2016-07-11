@@ -5,7 +5,11 @@
 .Logo {
   color: white;
   font-family: 'Sketch';
-  font-size: 70px;
+  font-size: 50px;
+
+  @include breakpoint(small) {
+    font-size: 70px;
+  }
 }
 
 .Logo--small {
