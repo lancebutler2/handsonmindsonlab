@@ -5,7 +5,7 @@
 .Logo {
   color: white;
   font-family: 'Sketch';
-  font-size: 50px;
+  font-size: 60px;
 
   @include breakpoint(small) {
     font-size: 70px;
