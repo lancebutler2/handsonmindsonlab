@@ -1,0 +1,117 @@
+.OverlayNav {
+  position: fixed;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: url(../images/blackboard-bg.png) top left repeat;
+  z-index: 999;
+  transform: translateX(100%);
+  //transition: all .25s ease-in-out;
+  transition: all 250ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  padding: 70px 15px 0 15px;
+
+  @include breakpoint(small) {
+    right: 0;
+    width: 350px;
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.OverlayNav__toggle {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 9999;
+  background: none;
+  border: none;
+  outline: none;
+
+  &:focus, &:active, &:hover {
+    outline: none;
+  }
+}
+
+.OverlayNav__toggle:before {
+  display: block;
+  content: "menu";
+  font-family: 'Sister';
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 3px;
+  left: -65px;
+  opacity: 1;
+  cursor: default;
+}
+
+.OverlayNav__cog {
+  color: $myMermaid;
+  font-size: 40px;
+  text-shadow: -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
+
+  &:hover, &:active, &:focus {
+    color: $myMermaid;
+  }
+
+  &.fa-spin {
+    animation: fa-spin 3.5s infinite linear;
+  }
+}
+
+.OverlayNav__heading {
+  color: $myMermaid;
+  font-family: 'Sister';
+  text-align: center;
+  margin-bottom: 20px;
+
+  span {
+    display: block;
+  }
+}
+
+.OverlayNav__list {
+  @include list-unstyled;
+}
+
+.OverlayNav__link {
+  font-family: 'Sister';
+  color: $myGold;
+  font-size: 25px;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+
+  &:hover {
+    color: $myPink;
+    text-decoration: none;
+  }
+}
+
+.OverlayNav__robot--bottom-right {
+  position: absolute;
+  bottom: 50px;
+  right: -85px;
+  transform: rotate(-61deg);
+}
+
+.OverlayNav__robot--top {
+  position: absolute;
+  top: -245px;
+  left: 5%;
+  transform: rotate(-180deg);
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+  &.peeking {
+    top: -73px;
+  }
+}

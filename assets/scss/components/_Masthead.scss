@@ -1,0 +1,8 @@
+.Masthead {
+  text-align: center;
+  @include make-row();
+}
+
+.MastheadContainer {
+  padding-top: 100px;
+}

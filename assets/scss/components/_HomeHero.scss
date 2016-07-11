@@ -1,0 +1,63 @@
+.HomeHero {
+  height: 100%;
+  background: url(../images/black_chalk_board_child.jpg) center 0 no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.HomeHero__content {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.HomeHero__content > div {
+  flex: 1;
+}
+
+.HomeHero__button {
+  @extend .btn;
+  background: $myPink;
+  background: rgba($myPink, .8);
+  color: white;
+  font-family: "Sister";
+  font-size: 25px;
+
+  @include breakpoint(small) {
+    font-size: 35px;
+  }
+
+  &:hover {
+    color: white;
+    background: rgba($myPink, 1);
+  }
+}
+
+.HomeHero__button-bulb {
+  transform: rotate(-10deg);
+}
+
+.HomeHero__robot {
+  position: absolute;
+  z-index: 20;
+  top: -55px;
+  left: 0;
+  width: 150px;
+  height: 171px;
+  transition: all 250ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+  @include breakpoint(medium) {
+    width: 275px;
+    height: 314px;
+    top: -105px;
+  }
+
+  &.hiding {
+    top: -50px;
+  }
+}

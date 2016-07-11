@@ -1,0 +1,23 @@
+{
+  "name": "hands-on-minds-on",
+  "authors": [
+    "Lance Butler II <lancebutler2@gmail.com>"
+  ],
+  "description": "Theme for the hands on minds on lab at Hembree Springs Elementary School",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

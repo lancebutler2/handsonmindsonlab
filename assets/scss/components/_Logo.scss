@@ -1,0 +1,63 @@
+.LogoContainer {
+  @include make-sm-column(12);
+}
+
+.Logo {
+  color: white;
+  font-family: 'Sketch';
+  font-size: 70px;
+}
+
+.Logo--small {
+  font-size: 40px;
+
+  @include breakpoint(small) {
+    font-size: 50px;
+  }
+}
+
+.Logo__word {
+  @include breakpoint(small) {
+    display: inline-block;
+  }
+}
+
+.Logo__word:nth-of-type(1) {
+  color: $myRed;
+
+  @include breakpoint(small) {
+    transform: rotate(-10deg);
+  }
+}
+
+.Logo__word:nth-of-type(2) {
+  color: $myGold;
+
+  @include breakpoint(small) {
+    transform: rotate(10deg);
+  }
+}
+
+.Logo__word:nth-of-type(3) {
+  color: $myPurple;
+
+  @include breakpoint(small) {
+    transform: rotate(-10deg);
+  }
+}
+
+.Logo__word:nth-of-type(4) {
+  color: $myMermaid;
+
+  @include breakpoint(small) {
+    transform: rotate(10deg);
+  }
+}
+
+.Logo__word:nth-of-type(5) {
+  color: $myBlue;
+
+  @include breakpoint(small) {
+    transform: rotate(-10deg);
+  }
+}

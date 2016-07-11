@@ -1,0 +1,44 @@
+@import "fonts";
+@import "mixins";
+@import "settings";
+@import "assets/vendor/font-awesome/scss/font-awesome.scss";
+@import "assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "wp-core";
+@import "components/Masthead";
+@import "components/Logo";
+@import "components/TintOverlay";
+@import "components/OverlayNav";
+@import "components/HomeHero";
+
+@import "pages/home";
+
+html, body, #page {
+  height: 100%;
+}
+
+body {
+  background: url(../images/blackboard-bg.png) top left repeat;
+  background-size: cover;
+}
+
+body.home,
+body.home #page,
+body.home #content {
+  height: 100%;
+}
+
+#page {
+  position: relative;
+}
+
+#primary {
+  padding-bottom: 25px;
+}
+
+p {
+  @include breakpoint(small) {
+    font-size: 22px;
+  }
+}

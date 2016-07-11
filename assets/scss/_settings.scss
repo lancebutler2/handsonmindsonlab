@@ -1,0 +1,25 @@
+$myPink: #d03169;
+$myPurple: #ac5df7;
+$myGold: #FEBE2B;
+$myMint: #d4f8c4;
+$myMermaid: #10c6c0;
+$myBlue: #00c5ff;
+$myRed: #f32541;
+
+// Bootstrap Overrides
+$font-size-base: 18px !default;
+$line-height-base: 1.428571429 !default; // 20/14
+$line-height-computed: floor(($font-size-base * $line-height-base)) !default; // ~20px
+$icon-font-path: "../vendor/bootstrap-sass/assets/fonts/bootstrap" !default;
+$fa-font-path: "../vendor/font-awesome/fonts" !default;
+$headings-font-family: "Sister" !default;
+$headings-color: $myMermaid !default;
+$text-color: $myGold !default;
+$font-family-base: Sister, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+//** Global textual link color.
+$link-color: $myMermaid !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color: darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: none !default;
