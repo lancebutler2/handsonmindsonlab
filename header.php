@@ -27,6 +27,8 @@
 <div id="page" class="site">
     <img class="HomeHero__robot" src="<?php echo get_template_directory_uri(); ?>/assets/images/robot3_home_page.png">
     
+    <div class="OverlayNav__tint"></div>
+    
     <button class="OverlayNav__toggle"><span class="OverlayNav__cog fa fa-cog"></span></button>
     
     <?php get_template_part('template-parts/components/overlay-navigation'); ?>

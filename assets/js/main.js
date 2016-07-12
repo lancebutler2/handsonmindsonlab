@@ -6,6 +6,7 @@ jQuery(document).ready(function ($) {
     var robotTop = $('.OverlayNav__robot--top');
     var homeRobot = $('.HomeHero__robot');
     var homeButton = $('.HomeHero__button');
+    var overlayTint = $('.OverlayNav__tint');
     
     // a robot on the homepage hides
     // when one hovers over a button
@@ -31,6 +32,20 @@ jQuery(document).ready(function ($) {
     }, function() {
         $(this).removeClass('fa-spin');
     }).click(function() {
-        $(menu).toggleClass('active');
+        toggleMenu();
+        toggleOverlayTint();
     });
+    
+    $(overlayTint).click(function() {
+        toggleMenu();
+        toggleOverlayTint();
+    });
+    
+    var toggleMenu = function() {
+        $(menu).toggleClass('active');   
+    };
+    
+    var toggleOverlayTint = function() {
+        $(overlayTint).toggleClass('active');
+    };
 });
