@@ -32,6 +32,10 @@
     font-size: 35px;
   }
 
+  @include breakpoint(medium) {
+    margin-top: 20px;
+  }
+
   &:hover {
     color: white;
     background: rgba($myPink, 1);
