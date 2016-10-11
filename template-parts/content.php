@@ -21,6 +21,7 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php handsonmindson_posted_on(); ?>
+			<br>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
